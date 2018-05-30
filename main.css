@@ -1,0 +1,156 @@
+body {
+  background-color: #DAE5F6;
+}
+
+main {
+margin-top: 12.5%/;
+max-width: 850px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+background-color: rgba(255, 255, 255, .8);
+color: black;
+font-size: 14px;
+border-radius: 15px;
+position: relative;
+padding-bottom: 70px
+
+}
+
+
+#sidebar {
+  width: 15%;
+  height: 100%;
+  float: left;
+  background-color: #709CE5;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: absolute;
+  margin-right: 10%;
+
+}
+
+#clip {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.15);
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+#fin {
+  margin-top: 80px;
+  color: grey;
+
+  width: 55%;
+  height: 50px;
+  filter: drop-shadow(5px 5px 10px #DAE5F6);
+  border-radius: 5px;
+  -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+   outline: none;
+  border: none;
+text-align: center;
+margin-left: 25%;
+}
+
+#ngctrl {
+  margin-top: 40px;
+}
+
+
+#fin {
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+::placeholder {
+  color: #DCDCDC;
+}
+
+ul {
+  margin-top: 40px;
+  list-style: none;
+}
+
+li {
+}
+
+#pcard {
+  width: 55%;
+  height: 185px;
+  border: 1px solid #eee;
+  margin-left: 25%;
+  border-radius: 5px;
+  background-color: white;
+  border-top: 5px #709CE5 solid;
+}
+
+#ltime {
+  background-color: #F95549;
+  display: inline-block;
+  padding: 2px;
+  border-radius: 2px;
+  color: white;
+  filter: drop-shadow(2px 2px 4px #DAE5F6);
+  margin-top: 5px;
+}
+
+#liname {
+
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 25px;
+}
+
+
+#liage {
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+#linit {
+  float: left;
+  display: inline-block;
+  margin-top: 90px;
+  background-color: #B43BF6;
+  color: white;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+  filter: drop-shadow(1.5px 1.5px 2px #DAE5F6);
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  background: -webkit-linear-gradient(to bottom, #9cc9d1, #6298A1);
+  background: linear-gradient(to bottom, #9cc9d1, #6298A1);
+
+
+}
+
+
+#lidoc {
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#llabel {
+  color: #A9A9A9;
+  font-weight: normal;
+}
+
+#pInfo {
+  float: right;
+  margin-right: 50px;
+  display: inline-block;
+}

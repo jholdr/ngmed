@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="main.css" rel="stylesheet" ></a>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+<script>
+  var app = angular.module("MyApp", []);
+
+  app.controller("MyCtrl", function($scope) {
+  $scope.friends = [
+    {
+      initials: "RH",
+      firstName: "RICHARD",
+      lastName: "HENDRIKS",
+      apTime: "9:00 AM",
+      doctor: "Dr. A",
+      age: 28
+    },
+
+    {
+      initials: "EL",
+      firstName: "Elizabeth",
+      lastName: "Lemon",
+      apTime: "12:15 PM",
+      doctor: "Dr. B",
+      age: 46
+    },
+
+    {
+      initials: "GC",
+      firstName: "George",
+      lastName: "Costanza",
+      apTime: "1:15 PM",
+      doctor: "Dr. C",
+      age: 52
+    },
+
+    {
+      initials: "DS",
+      firstName: "Dwight",
+      lastName: "Schrute",
+      apTime: " 2:30 PM",
+      doctor: "Dr. D",
+      age: 39
+    },
+
+    {
+      initials: "BA",
+      firstName: "Bobby",
+      lastName: "Axelrod",
+      apTime: " 3:45 PM",
+      doctor: "Dr. E",
+      age: 54
+    }
+
+  ];
+});
+</script>
+</head>
+
+<body ng-app="MyApp" ng-controller="MyCtrl">
+<main>
+
+  <div id="sidebar">
+    <i id="clip" class="fas fa-notes-medical"></i>
+  </div>
+
+  <div id="ngctrl" ng-controller="MyCtrl">
+    <form id="form" >
+      <input id="fin" ng-model="query" type="text"
+        placeholder="Search by Patient..." autofocus>
+    </form>
+  </br>
+    <ul id="pcard" ng-repeat="friend in friends | filter:query | orderBy: 'name' ">
+      <div id="linit">{{friend.initials}}</div>
+
+      <div id="pInfo">
+      <li id="liname"><span id="llabel">Patient Name:</span> {{friend.lastName}}, {{friend.firstName}} </li>
+      <li id="liage"><span id="llabel">AGE:</span> {{friend.age}}</li>
+      <li id="lidoc"><span id="llabel">Doctor:</span> {{friend.doctor}}</li>
+      <li id="ltime">{{friend.apTime}}</li>
+    </div>
+    </ul>
+
+
+
+  </div>
+
+</main>
+</body>
+</html>
